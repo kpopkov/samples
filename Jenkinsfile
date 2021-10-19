@@ -1,17 +1,9 @@
 pipeline {
-    agent any 
-
+    agent any
     stages {
-        stage('Build Assets') {
-            agent any 
+        stage('Build') {
             steps {
-                echo 'Building Assets...'
-            }
-        }
-        stage('Test') {
-            agent any
-            steps {
-                echo 'Testing stuff...'
+                bat 'set'
             }
         }
     }
